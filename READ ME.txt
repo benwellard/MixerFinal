@@ -1,0 +1,64 @@
+﻿INSTALLATION AND MODIFICATION INSTRUCTIONS
+
+
+INSTALLATION
+
+1. Extract source files to a folder of your choosing
+
+2. If executing the program for OS X or Android, the relevant driver should be included in the source files and does not require installation. However if you are running the Windows version of the program, a driver will need to be installed. This driver can be found under the /Driver folder in the root directory. 
+
+3. Connect the mixer to the host Computer or Android Device through either a USB-A to USB-B or USB-B to USB-Micro B respectively. Alternatively for Android, a standard USB-A to USB-B cable can be used along with an “On-The-Go” adapter. 
+
+4. Run the executable “Mixer”, running the relevant executable for the platform you are executing on, e.g. the .exe file for Windows, the .app for OS X, and the .apk for Android. 
+
+
+MODIFICATION AND DEVELOPMENT
+
+
+Developing for different platforms requires different installations and therefore are listed below separately. 
+Due to the program's extensive use of the Qt-Project's custom libraries, it is highly recommended if not essential to continue development of the program using Qt 5.3.1 at the least. Further platforms are not tested but presumably supported.
+
+OS X
+
+1. Download and install Qt 5.3.1 for your chosen development platform(Windows or OS X). This can be found at qt-project.org/downloads.
+
+2.  Open Qt Creator, and navigate to File → Open File or Project. 
+
+3. Select MixerOSX.pro to open the project and load the relevant source files. 
+
+
+	WINDOWS
+
+1. Install the Windows Driver as detailed below. 
+
+2. Download and install Qt 5.3.1 for your chosen development platform. This can be found at qt-project.org/downloads.
+
+3. Open Qt Creator, and navigate to File → Open File or Project
+
+4. Select MixerWin.pro to open the project and load the relevant source files.
+
+
+
+
+	
+
+	ANDROID
+
+1. Download and Install Qt 5.3.1 for Android. Two versions of Qt are available, depending on your development platform. 
+
+2. Open and set up your copy of Qt 5.3.1 for Android, following the steps detailed at qt-project.org/doc/qt-5/androidgs.html.
+
+3. Navigate to File → Open File or Project 
+
+4. Select MixerAndroid.pro to open the project and load the relevant source files.
+
+
+
+
+INSTALLING THE WINDOWS DRIVER
+
+Due to the way Windows performs USB communication with audio devices, a custom driver must be installed on any Windows system wanting to interface with the Mixer device. 
+
+If you are installing the program just to be run, you only require installing the USB Driver, named T_USB_AUDIO_CUSTOMIZATION_KIT. However if you are wanting to modify the program, the SDK is needed, which can be installed by executing  T_USB_AUDIO_SDK.
+
+ 
